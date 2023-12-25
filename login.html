@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiFi Connect Page with Ads</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #333;
+        }
+        #adContainerTop, #adContainerBottom, #passwordForm {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        #adContainerTop, #adContainerBottom {
+            height: 190px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to our WiFi Network</h1>
+
+    <div id="adContainerTop">
+
+        <img src="ads.gif" alt="Top Ad">
+    </div>
+
+    <!-- Password form -->
+    <form id="passwordForm">
+        <label for="wifiPassword">Enter WiFi Password:</label>
+        <input type="password" id="GD & KYI_LUBBY" name="wifiPassword" required>
+        <br>
+        <button type="button" onclick="connectToWiFi()">Connect</button>
+    </form>
+
+    <div id="adContainerBottom">
+        <!-- Replace the following line with the URL of your actual bottom GIF ad -->
+        <img src="ads.gif" alt="Bottom Ad">
+    </div>
+
+    <script>
+        // Function to handle the connection to WiFi (you can customize this)
+        function connectToWiFi() {
+            var password = document.getElementById('wifiPassword').value;
+            // Perform the necessary actions to connect to WiFi with the entered password
+            // For simplicity, you can just alert the password for demonstration purposes
+            alert('Connecting to WiFi with password: ' + password);
+        }
+    </script>
+
+</body>
+</html>
